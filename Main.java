@@ -22,5 +22,20 @@ public class Main {
 
         System.out.println("Ingrese el número de estudiante que desea modificar (1-10): ");
         int estudianteAModificar = Integer.parseInt(scanner.nextLine()) - 1;
+        if (estudianteAModificar >= 0 && estudianteAModificar < 10) {
+            System.out.println("Ingrese el nuevo nombre del estudiante: ");
+            estudiantes[estudianteAModificar].setNombre(scanner.nextLine());
+            System.out.println("Ingrese la nueva edad del estudiante: ");
+            estudiantes[estudianteAModificar].setEdad(Integer.parseInt(scanner.nextLine()));
+            System.out.println("Ingrese el nuevo curso del estudiante: ");
+            estudiantes[estudianteAModificar].setCurso(scanner.nextLine());
+
+            System.out.println("Detalles del estudiante modificado: ");
+            estudiantes[estudianteAModificar].imprimirDetalles();
+        } else {
+            System.out.println("Número de estudiante inválido.");
+        }
+
+        scanner.close();
     }
 }
