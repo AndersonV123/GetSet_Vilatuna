@@ -28,8 +28,13 @@ public class Estudiante {
     public void setCurso(String curso) {
         this.curso = curso;
     }
-    
+
     public String getCurso() {
         return curso;
+    }
+    public void imprimirDetalles() {
+        System.out.println("Nombre: " + getNombre());
+        System.out.println("Edad: " + getEdad());
+        System.out.println("Curso: " + getCurso());
     }
 }
