@@ -37,4 +37,5 @@ public class Estudiante {
         System.out.println("Edad: " + getEdad());
         System.out.println("Curso: " + getCurso());
     }
+
 }
