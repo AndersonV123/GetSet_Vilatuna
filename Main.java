@@ -15,5 +15,12 @@ public class Main {
             Estudiante nuevoEstudiante = new Estudiante(nombre, edad, curso);
             estudiantes[i] = nuevoEstudiante;
         }
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Detalles del estudiante " + (i + 1) + ": ");
+            estudiantes[i].imprimirDetalles();
+        }
+
+        System.out.println("Ingrese el número de estudiante que desea modificar (1-10): ");
+        int estudianteAModificar = Integer.parseInt(scanner.nextLine()) - 1;
     }
 }
